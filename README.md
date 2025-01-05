@@ -76,8 +76,9 @@ Bu projeyi yerel ortamınıza kurmak için aşağıdaki adımları izleyin:
 
 Proje kapsamında tasarlanan ER diyagramı, aşağıdaki iki bağlantıya göre düzenlenmiştir:
 
-- ![E-R Diyagramı](https://github.com/user-attachments/assets/12daeacc-5fa7-4af5-a066-9327a4b4c449)
-- ![E-R UMLDiyagramı](https://github.com/user-attachments/assets/7a263a33-03f6-40ca-9c85-9b712e5b343c)
+![E-R Diyagramı](https://github.com/user-attachments/assets/12daeacc-5fa7-4af5-a066-9327a4b4c449)
+
+![E-R UML Diyagramı](AKSO%20E-R_UML%20Diagrami.jpg)
 
 ## Lisans
 
