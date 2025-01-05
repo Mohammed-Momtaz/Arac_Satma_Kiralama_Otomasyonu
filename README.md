@@ -43,9 +43,8 @@ Proje; şube, personel, müşteri, araç, kiralama, satış, bakım ve sigorta g
 | **Fatura**       | Satış ve kiralama işlemlerine dair fatura bilgilerini içerir. | **Fatura_ID (PK)**, Müşteri_ID (FK), İşlem_Tarihi, Tutar_Miktarı                                                                                                                |
 | **Tamir ve Onarım** | Araç tamir ve bakım işlemlerinin detaylarını içerir. | **Tamir_ID (PK)**, Araç_ID (FK), Tamir_Tarihi, Açıklama, Onarım_Maliyeti                                                                                                        |
 | **Değişen Parça** | Araç tamirlerinde değişen parçaların bilgilerini içerir. | **Parça_ID (PK)**, Tamir_ID (FK), Parça_Adı, Parça_Maliyeti                                                                                                                     |
-| **Personel**     | Şubede çalışan personel bilgilerini içerir.        | **Personel_ID (PK)**, Şube_ID (FK), Personel_Adı, Personel_Soyadı, Personel_Tel_No, Personel_Görevi                                                                             |
-| **Kullanıcılar** | Sisteme giriş yapacak kullanıcı bilgilerini içerir. | **User_ID (PK)**, Kullanıcı_Adı, Şifre, Tam_Adı, Permission_ID (FK)                                                                                                             |
-| **Yetkiler**     | Kullanıcıların sistemdeki yetki seviyelerini belirtir. | **Permission_ID (PK)**, Yetki_Adı                                                                                                                                               |
+| **Personel**     | Şubede çalışan personel bilgilerini Ve Sisteme giriş yapacak kullanıcı bilgilerini içerir.        | **Personel_ID (PK)**, Şube_ID (FK), Yetki_ID (FK) Personel_Adı, Personel_Soyadı, Personel_Tel_No, Personel_Görevi ||
+| **Yetkiler**     | Kullanıcıların sistemdeki yetki seviyelerini belirtir. | **Yetki_ID (PK)**, Yetki_Adı                                                                                                                                               |
 
 ## İlişkiler
 
@@ -63,7 +62,7 @@ Proje; şube, personel, müşteri, araç, kiralama, satış, bakım ve sigorta g
 | **Müşteri - Fatura**     | Bir müşteri birden fazla fatura kaydına sahip olabilir (1-N).                                      |
 | **Tamir ve Onarım - Değişen Parça** | Her tamir kaydında birden fazla parça değişebilir (1-N).                                  |
 | **Şube - Personel**      | Her şubeye birden fazla personel bağlıdır (1-N).                                                   |
-| **Kullanıcılar - Yetkiler** | Her kullanıcı, bir yetki seviyesine sahip olabilir (N-1).                                         |
+| **Personel - Yetkiler** | Her Personel, bir yetki seviyesine sahip olabilir (N-1).                                         |
 
 ## Kurulum
 
